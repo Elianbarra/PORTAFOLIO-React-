@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portafolio</title>
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <title>Portafolio</title>
+    
     <style>
       body {
         margin: 0;
@@ -16,7 +29,7 @@
 
       }
       
-    </style>    <script type="module" crossorigin src="https://Elianbarra.github.io/portafolio/assets/index-BJeh8r2j.js"></script>
+    </style>    <script type="module" crossorigin src="https://Elianbarra.github.io/portafolio/assets/index-Cq-dH63R.js"></script>
     <link rel="stylesheet" crossorigin href="https://Elianbarra.github.io/portafolio/assets/index-CKo4mGx2.css">
   </head>
   <body>
